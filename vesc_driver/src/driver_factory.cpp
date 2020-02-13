@@ -1,13 +1,10 @@
-//
-// Created by abuchegger on 19.07.18.
-//
-#include <vesc_motor/driver_factory.h>
+#include <vesc_driver/driver_factory.h>
 #include <limits>
 #include <vesc_driver/vesc_driver_impl.h>
 #include <vesc_driver/vesc_driver_mockup.h>
-#include <vesc_motor/transport_factory.h>
+#include <vesc_driver/transport_factory.h>
 
-namespace vesc_motor
+namespace vesc_driver
 {
 DriverFactory::DriverFactory(TransportFactoryPtr transport_factory, bool use_mockup)
   : transport_factory_(std::move(transport_factory)), use_mockup_(use_mockup)

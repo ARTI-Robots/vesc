@@ -41,6 +41,8 @@ add_library(${PROJECT_NAME}
   include/vesc_driver/vesc_driver_impl.h src/vesc_driver_impl.cpp
   include/vesc_driver/vesc_driver_interface.h src/vesc_driver_interface.cpp
   include/vesc_driver/vesc_driver_mockup.h src/vesc_driver_mockup.cpp
+  src/transport_factory.cpp include/vesc_driver/transport_factory.h
+  src/driver_factory.cpp include/vesc_driver/driver_factory.h
 )
 
 target_link_libraries(${PROJECT_NAME}

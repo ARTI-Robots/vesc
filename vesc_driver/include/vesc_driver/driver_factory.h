@@ -1,16 +1,12 @@
-//
-// Created by abuchegger on 19.07.18.
-//
-#ifndef VESC_MOTOR_DRIVER_FACTORY_H
-#define VESC_MOTOR_DRIVER_FACTORY_H
+#ifndef VESC_DRIVER_DRIVER_FACTORY_H
+#define VESC_DRIVER_DRIVER_FACTORY_H
 
 #include <chrono>
 #include <ros/node_handle.h>
 #include <vesc_driver/types.h>
 #include <vesc_driver/vesc_driver_interface.h>
-#include <vesc_motor/types.h>
 
-namespace vesc_motor
+namespace vesc_driver
 {
 class DriverFactory
 {
@@ -27,4 +23,4 @@ protected:
 };
 }
 
-#endif //VESC_MOTOR_DRIVER_FACTORY_H
+#endif //VESC_DRIVER_DRIVER_FACTORY_H

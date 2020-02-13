@@ -25,6 +25,12 @@ class TransportRequest;
 class VescDriverInterface;
 
 typedef std::shared_ptr<VescDriverInterface> VescDriverInterfacePtr;
+
+class DriverFactory;
+typedef std::shared_ptr<DriverFactory> DriverFactoryPtr;
+
+class TransportFactory;
+typedef std::shared_ptr<TransportFactory> TransportFactoryPtr;
 }
 
 #endif //VESC_DRIVER_TYPES_H
